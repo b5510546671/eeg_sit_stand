@@ -18,6 +18,7 @@ A framework for EEG-based Motor Execution (ME) and Motor Imagery (MI) classficat
 - torch==2.6.0
 - joblib==1.5.2
 - braindecode==1.3.2
+- eeglib==0.4.1.3
 ---
 
 
@@ -26,15 +27,19 @@ A framework for EEG-based Motor Execution (ME) and Motor Imagery (MI) classficat
 ```
 .
 ├── networks/
-│   ├── __init__.py          # Exports EEGNet
-│   ├── EEGNet.py            # EEGNet model
-│   └── EEGTransformer.py    # TCANet / EEGTransformer model
+│   ├── __init__.py                                           # Exports EEGNet
+│   ├── EEGNet.py                                             # EEGNet model
+│   └── EEGTransformer.py                                     # TCANet / EEGTransformer model
 ├── utils/
-│   ├── layers.py            # Custom PyTorch layers
-│   ├── trainer.py           # Trainer class, EarlyStopping, DataLoader utils
-│   ├── utils.py             # Data loading, logging helpers
-├── train_DL_independent.py  # Main training script
-└── results.py               # Results aggregation and visualization
+│   ├── layers.py                                             # Custom PyTorch layers
+│   ├── trainer.py                                            # Trainer class, EarlyStopping, DataLoader utils
+│   ├── utils.py                                              # Data loading, logging helpers
+├── visualizations/
+│   ├── observe_ica_plot_fig5.ipynb                           # Plot Fig 5 (Comparison of EEG signals before and after ICA).
+│   ├── eeg_sit_stand_plot_fig7.ipynb                         # Plot Fig 7 (Grand-average EEG activity).
+│   ├── eeg_sit_stand_topographical_plot_fig8.ipynb           # Plot Fig 8 (Topographical map visualization).
+├── train_DL_independent.py                                   # Main training script
+└── results.py                                                # Results aggregation and visualization
 ```
 
 ---
